@@ -50,7 +50,6 @@ echo "Image " . ($i + 1) . " not found.<br>";
     }
 }
 
-// Output the extracted data
 for ($i = 0; $i < count($titles); $i++) {
     echo "Title " . ($i + 1) . ": " . $titles[$i] . "<br>";
     echo "Description " . ($i + 1) . ": " . $descriptions[$i] . "<br>";

@@ -42,10 +42,8 @@ foreach ($titleArray as $title) {
 
 $titleLinkArray = array();
 
-// Define the indices of the titles you want (2, 3, 4, and 5)
 $titleIndices = array(8,9,10,11,12);
 
-// Find all matching title anchor elements
 $titleAnchorElements = $html->find('.article-item .article-title a');
 
 foreach ($titleIndices as $index) {
@@ -55,9 +53,7 @@ foreach ($titleIndices as $index) {
     }
 }
 
-// Now, $titleLinkArray contains the direct URLs for the specified titles
 
-// Display the title links
 foreach ($titleLinkArray as $link) {
     echo $link . '<br>';
 }

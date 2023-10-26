@@ -43,10 +43,8 @@ foreach ($titleArray as $title) {
 
 $descriptionArray = array();
 
-// Define the indices of the descriptions you want (1, 2, 5, and 6)
 $descriptionIndices = array(0,1,2);
 
-// Find all matching description elements
 $descriptionElements = $html->find('.article-excerpt a');
 
 foreach ($descriptionIndices as $index) {
@@ -56,9 +54,7 @@ foreach ($descriptionIndices as $index) {
     }
 }
 
-// Now, $descriptionArray contains the descriptions for the specified indices
 
-// Display the descriptions
 foreach ($descriptionArray as $description) {
     echo '<p>' . $description . '</p>';
 }
@@ -66,10 +62,8 @@ foreach ($descriptionArray as $description) {
 
 $titleLinkArray = array();
 
-// Define the indices of the titles you want (2, 3, 4, and 5)
 $titleIndices = array(0,1,2);
 
-// Find all matching title anchor elements
 $titleAnchorElements = $html->find('.article-item .article-title a');
 
 foreach ($titleIndices as $index) {
@@ -79,9 +73,7 @@ foreach ($titleIndices as $index) {
     }
 }
 
-// Now, $titleLinkArray contains the direct URLs for the specified titles
 
-// Display the title links
 foreach ($titleLinkArray as $link) {
     echo $link . '<br>';
 }
